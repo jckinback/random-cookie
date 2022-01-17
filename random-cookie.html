@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Random Store Link</title>
+	<style type="text/css">
+		body {background:#009966;}
+		a {color:#ffffff;display:block;font-weight:700;left:50%;padding:6px 12px;position:absolute;text-decoration:none;text-transform:uppercase;top:50%;transform:translate(-50%,-50%);}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var sites = [
+			'https://digitalcookie.girlscouts.org/scout/regina306385',
+			'https://digitalcookie.girlscouts.org/scout/reagan692702'
+		];
+		function randomSite() {
+			var i = parseInt(Math.random() * sites.length);
+			location.href = sites[i];
+		}
+	</script>
+	<a href="#" onclick="randomSite();" target="_blank">Random Store</a>
+</body>
+</html>
